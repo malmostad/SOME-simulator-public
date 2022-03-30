@@ -1,0 +1,40 @@
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.layout {
+    display: flex;
+
+    .col-l {
+        // margin-left: 100px;
+        width: 310px;
+        vertical-align: middle;
+    }
+    .col-c {
+        width: 100%;
+    }
+    .col-r {
+        width: 375px;
+        // margin-right: 100px;
+    }
+}
+
+.flex {
+    display: flex;
+    
+    .flex-col-full-width {
+        flex: 0 1 auto;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.view{
+    max-width: 1094px;
+    margin:0 auto;
+    padding:0 30px;
+}

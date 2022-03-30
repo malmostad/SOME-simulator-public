@@ -1,0 +1,30 @@
+@import './typography';
+@import './inputs';
+@import './spacings';
+@import './colors';
+@import './buttons';
+@import './card';
+@import './layout';
+@import './admin';
+@import '~vue-slider-component/lib/theme/default.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $primary-background-color;
+    margin: 0;
+}
+a{
+    color:$primary-button-background-color;
+}
+
+.nav-link{
+    margin: 100px 0 30px 0; 
+    display: block;
+    text-align: right;
+}
+
+[v-cloak] { display: none }

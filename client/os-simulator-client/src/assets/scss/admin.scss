@@ -1,0 +1,26 @@
+.edit-header{
+    position: relative;
+    display: flex;
+    margin-top: $space-xl;
+    width: 100%;
+    justify-content: flex-end;
+    a{
+        text-decoration: none;
+        @include typography(regular, 16, $dark-blue1);
+        padding: $space-sm/2;
+        cursor: pointer;
+    }
+    a:last-of-type{
+        position: relative;
+        &:before{
+            position: absolute;
+            display: block;
+            content: "";
+            height: 15px;
+            width: 1px;
+            left: 0;
+            top: 12px;
+            background-color: $dark-blue1;
+        }
+    }
+}

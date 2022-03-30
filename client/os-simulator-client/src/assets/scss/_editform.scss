@@ -1,0 +1,124 @@
+@import 'colors';
+@import 'typography';
+@import 'elements';
+@import 'spacings';
+@import 'inputs';
+@import 'transitions';
+
+.edit-form {
+    
+    textarea:-ms-input-placeholder, input[type=text]:-ms-input-placeholder {
+        color: $dark-gray1;
+    }
+
+    textarea::placeholder, input[type=text]::placeholder {
+        color: $dark-gray1;
+    }
+    
+    select {
+        width: 100%;
+        padding: 20px 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: $third-background-color url('../assets/icons/arrow-down.svg') no-repeat right 30px center;
+        border-radius: 6px;
+        border: none;
+        color: $dark-gray1;
+        &:active, &:focus {
+            outline: none;
+        }
+        font-size: 1rem;
+        
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+    
+    .error {
+        color: $error-color;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+
+    div {
+        margin-top: 25px;
+    }
+
+    input[type=text], textarea {
+        border-radius: 2px;
+        width: 100%;
+    }
+
+    textarea {
+        padding: 20px 25px;
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+
+    div.checkbox-area {
+        background-color: $third-background-color;
+        padding: 20px 20px 20px 30px;
+
+        label {
+            margin: 15px 0;
+
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            align-content: flex-start;
+            height: 30px;
+
+            &:last-child {
+                margin-bottom: 20px;
+            } 
+
+            span {
+                white-space: nowrap;
+            }
+            input[type="checkbox"] {
+                &:focus {
+                    outline: none;
+                }
+                
+                position: relative;
+                top: 0;
+                -moz-appearance:initial;
+            }
+
+            input{
+                width:0;
+                height:0;
+            }
+
+            input {
+                &::before {
+                    display: block;
+                    z-index:10;
+                    content: "\00a0";
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    right: 40px;
+                    border-radius: 6px;
+                    background-color: $primary-background-color;
+                }
+
+                &:checked::before {
+                    background: $primary-background-color  url('../assets/icons/check.svg') no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+                }
+            }
+
+        }
+    }
+}

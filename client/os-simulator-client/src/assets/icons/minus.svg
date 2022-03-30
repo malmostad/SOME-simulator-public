@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="3px" viewBox="0 0 19 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Line 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Facilitator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Välj-scenario-+-tidsåtgång" transform="translate(-841.000000, -278.000000)">
+            <rect id="Rectangle" fill="#E6E8EB" x="0" y="0" width="1440" height="1388"></rect>
+            <circle id="Oval" fill="#647088" cx="851" cy="279" r="25"></circle>
+            <line x1="843" y1="279.5" x2="828" y2="279.5" id="Line-2" stroke="#F0F1F4" stroke-width="3" stroke-linecap="square"></line>
+            <circle id="Oval" fill="#647088" cx="851" cy="279" r="25"></circle>
+            <line x1="858" y1="279.5" x2="843" y2="279.5" id="Line-2" stroke="#F0F1F4" stroke-width="3" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

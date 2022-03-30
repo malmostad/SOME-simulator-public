@@ -1,0 +1,15 @@
+
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>clock-circular-outline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Användare" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FB-TOM-vy-vid-uppstart" transform="translate(-123.000000, -420.000000)">
+            <rect id="Rectangle" x="0" y="0" width="1440" height="3056"></rect>
+            <g id="clock-circular-outline" transform="translate(123.000000, 420.000000)" fill="#647088" fill-rule="nonzero">
+                <path d="M13,0 C5.83180321,0 0,5.83180321 0,13 C0,20.1681968 5.83180321,26 13,26 C20.1681968,26 26,20.1681968 26,13 C26,5.83180321 20.1681968,0 13,0 Z M13,23.2338205 C7.35712227,23.2338205 2.7659119,18.6431453 2.7659119,13 C2.7659119,7.35685467 7.35712227,2.7661795 13,2.7661795 C18.6428777,2.7661795 23.2340881,7.35685467 23.2340881,13 C23.2340881,18.6431453 18.6428777,23.2338205 13,23.2338205 Z" id="Shape"></path>
+                <path d="M19.9359187,12.9084967 L14.1281627,12.9084967 L14.1281627,6.04575163 C14.1281627,5.46823529 13.6517203,5 13.0640813,5 C12.4764424,5 12,5.46823529 12,6.04575163 L12,13.9542484 C12,14.5317647 12.4764424,15 13.0640813,15 L19.9359187,15 C20.5235576,15 21,14.5317647 21,13.9542484 C21,13.376732 20.5235576,12.9084967 19.9359187,12.9084967 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+.vs/
+/server/SoMeSimulator/some.db
+.vscode/launch.json
+.vscode/tasks.json
+server/.idea/.idea.SoMeSimulator/.idea/dataSources.xml
+server/.idea/.idea.SoMeSimulator/.idea/dictionaries/jonasstefanutti.xml
+server/.idea/.idea.SoMeSimulator/.idea/codeStyles/codeStyleConfig.xml
+.DS_Store
+server/SoMeSimulator/.DS_Store

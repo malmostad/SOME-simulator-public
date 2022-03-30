@@ -1,0 +1,110 @@
+/*
+38px = 2.375rem
+32px = 2rem
+26px = 1.625rem
+20px = 1.25rem
+18px = 1.125rem
+16px = 1rem (base)
+14px = 0.875rem
+12px = 0.75rem 
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap');
+@import './colors';
+// @import 'fonts/opensans_extrabold_macroman/stylesheet';
+// @import 'fonts/opensans_light_macroman/stylesheet';
+// @import 'fonts/opensans_regular_macroman/stylesheet';
+
+// $regular-font: 'open_sansregular';
+// $light-font: 'open_sanslight';
+// $extrabold-font: 'open_sansextrabold';
+// $bold-font: 'open_sansbold';
+
+:root,
+html {
+  font-size: 16px;
+}
+
+@mixin typography($font-type, $size, $color : $default-text-color) {
+  color: $color;
+
+  font-family: 'Open Sans';
+
+  @if $font-type == regular {
+    font-weight: 400;
+  } @else if $font-type == light {
+    font-weight: 300;
+  } @else if $font-type == bold {
+    font-weight: 600;
+  } @else if $font-type == extrabold {
+    font-weight: 800;
+  }
+
+  @if $size == 38 {
+    font-size: 2.375rem;
+  } @else if $size == 32 {
+    font-size: 2rem;
+  } @else if $size == 26 {
+    font-size: 1.625rem;
+  } @else if $size == 20 {
+    font-size: 1.25rem;
+  } @else if $size == 18 {
+    font-size: 1.125rem;
+  } @else if $size == 16 {
+    font-size: 1rem; /*(base)*/
+  } @else if $size == 14 {
+    font-size: 0.875rem;
+  } @else if $size == 12 {
+    font-size: 0.75rem;
+  }
+}
+
+h1,
+h2.big {
+  @include typography(extrabold, 32, $default-text-color);
+}
+
+h1.big {
+  @include typography(extrabold, 38, $default-text-color);
+  .sub-heading {
+    @include typography(light, 38, $default-text-color);
+  }
+}
+
+h2 {
+  .sub-heading {
+    @include typography(light, 32, $teal);
+  }
+}
+
+.sub-heading{
+    @include typography(light, 32, $teal);
+}
+
+
+body {
+  @include typography(regular, 16, $default-text-color);
+}
+
+a {
+  @include typography(regular, 16, $default-text-color);
+}
+
+.nav-link {
+    @include typography(regular, 12, $default-text-color);
+}
+
+.small {
+  @include typography(regular, 12, $default-text-color);
+}
+
+.some-logo {
+  @include typography(light, 32, $sub-heading-color);
+}
+
+.bold {
+    @include typography(bold, 16, $dark-blue1);
+}
+
+span.bold-label, h3.bold-label {
+    @include typography(bold, 18 $default-text-color);
+}

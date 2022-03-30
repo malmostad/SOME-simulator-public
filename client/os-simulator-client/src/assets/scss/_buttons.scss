@@ -1,0 +1,42 @@
+/* Styles for buttons */
+
+@import 'colors.scss';
+@import 'typography.scss';
+
+button,
+input[type='submit'] {
+  letter-spacing: 0.67px;
+  border: none;
+  border-radius: 6px;
+  height: 44px;
+  padding: 11px 26px;
+}
+
+button,
+button.primary,
+input[type='submit'].primary {
+  @include typography(regular, 16, $primary-button-foreground-color);
+  background-color: $primary-button-background-color;
+    
+}
+
+
+button.secondary,
+input[type='submit'].secondary {
+  @include typography(regular, 16, $secondary-button-foreground-color);
+  background-color: $secondary-button-background-color;
+}
+
+button.tertiary,
+input[type='submit'].tertiary {
+  @include typography(regular, 16, $tertiary-button-foreground-color);
+  background-color: $tertiary-button-background-color;
+  border-color: $dark-gray2;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+button.round {
+  border-radius: 50%;
+}

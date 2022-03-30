@@ -1,0 +1,82 @@
+/* Styles for input elements */
+
+@import 'colors.scss';
+@import 'typography.scss';
+
+
+textarea {
+    @include typography(regular, 16, $default-text-color);
+    resize: none;
+    width: auto;
+    background-color: $third-background-color;
+    height: 130px;
+    padding: 11px 15px;
+    border: none;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+input {
+    height: 20px;
+    display: border-box;
+}
+
+input[type=text], input[type=password] {
+    border: none;
+    background-color: $third-background-color;
+    @include typography(regular, 16, $default-text-color);
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+}
+
+input[type=text].small, input[type=password].small {
+    height: 40px;
+    border-radius: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+}
+
+label {
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+
+    input {
+        position: absolute;
+        top: 20px;
+    }
+
+    input ~ span  {
+        transition: all 0.1s ease;
+        position: absolute;
+        top: 35px;
+        left: 20px;
+        color: $place-holder-color;
+        
+    }
+
+
+    input:focus,
+    input:not(:invalid) {
+        font-size: 16px !important;
+        @include typography(regular, 16, $default-text-color);
+    }
+    
+    input:focus ~ span,
+    input:not(:invalid) ~ span
+    {
+        @include typography(regular, 12, $place-holder-color);
+        top:-2px;
+    }
+}
+
